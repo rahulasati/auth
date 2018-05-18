@@ -4,7 +4,8 @@
 
 HubSpot is a great platform for all your contact information and a great way to interact. But to provide your customers integrated and secure access to pages that need authentication, you'll need another solution.
 
-With SpinAuthenticator you can integrate client-side authentication on hubspot using just a minimal lightweight Javascript library.
+With SpinAuthenticator you can integrate client-side authentication on hubspot using just a minimal lightweight Javascript library.<br>
+
 To add this library to your site, add:
 
 ```markdown
@@ -41,6 +42,8 @@ Initialize the library prior to making any other calls with a call to HA.init(op
 ```
 These options are all required:
 
-**API_KEY** – an application's unique key, can be created using dashboard.
-**authPageUrl** – The Authentication page, in case of auth fail we will redirect user to this page.
-**complete** – a function(err, data) that will be called when initialization is complete.
+**API_KEY** – an application's unique key, can be created using dashboard.<br>
+
+**authPageUrl** – The Authentication page, in case of auth fail we will redirect user to this page.<br>
+
+**complete** – a function(err, data) that will be called when initialization is complete.<br>
