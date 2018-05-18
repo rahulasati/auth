@@ -6,7 +6,7 @@ For simple client-side authentication on hubspot, we provide a minimal Javascrip
 To add this library to your site, add:
 
 ```markdown
-<script type='text/javascript' src='spin.min.js'></script>
+<script type='text/javascript' src='https://github.com/rahulasati/auth/blob/master/spin.min.js'></script>
 ```
 
 ### Usage
