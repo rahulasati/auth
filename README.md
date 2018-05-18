@@ -6,7 +6,7 @@ For simple client-side authentication on hubspot, we provide a minimal Javascrip
 To add this library to your site, add:
 
 ```markdown
- <script type='text/javascript' src='https://cdn.rawgit.com/rahulasati/auth/master/js/1.0.0/main.js'></script>
+<script type='text/javascript' src='https://cdn.rawgit.com/rahulasati/auth/master/js/1.0.0/main.js'></script>
 ```
 
 ### Usage
