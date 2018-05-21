@@ -47,3 +47,93 @@ These options are all required:
 **authPageUrl** – The Authentication page, in case of auth fail we will redirect user to this page.<br>
 
 **complete** – a function(err, data) that will be called when initialization is complete.<br>
+
+### User Registeration
+
+```markdown
+<script type="text/javascript">
+        HA.performRegister({
+            first_name: '',
+            last_name: '',
+            email: '',
+            password: '',
+            complete: function (err, data) {
+                if (err) {
+                    // if error then registeration fails take action based on message.
+                } else {
+                    // registration successfull, verification email has been send once that is done proceed with login.
+                    // here disply message received in callback data field and go to login.
+                }
+            }
+        });
+</script>
+```
+
+These all fields are required:
+    
+**first_name** – first name of the user. <br>
+
+**last_name** – last name of the user. <br>
+
+**email** – email address of the user. <br>
+
+**password** – password.<br>
+
+**complete** – a function(err, data) that will be called when registration is complete.<br>
+
+
+### User Login
+
+```markdown
+    <script type="text/javascript">
+        HA.performLogin({
+            email: '',
+            password: '',
+            complete: function (err, data) {
+                if (err) {
+                    // if error then attempt to login failed, display reason of failuare using err.
+                    // here remain on login screen only.
+                } else {
+                    // login successful redirect to main screen.
+                }
+            }
+        });
+    </script>
+```
+
+**email** – email.<br>
+
+**password** – password.<br>
+
+**complete** – a function(err, data) that will be called when login is complete.<br>
+
+
+### User Logout
+    
+```markdown
+<script type="text/javascript">
+    HA.logout();
+</script>
+```
+
+### Resend Email Verification (if required)
+
+```markdown
+<script type="text/javascript">
+    HA.resendVerificationMail({
+        email: '',
+        complete: function (err, data) {
+            if (err) {
+                // error while sending verification email, check error.
+            } else {
+                // verification email has been sent successfully, check your email.
+            }
+        }
+    });
+</script>
+```
+
+**email** – email address of the user for which email verification is pending.<br>
+
+**complete** – a function(err, data) that will be called when registration is complete.<br>
+
