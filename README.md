@@ -67,6 +67,7 @@ These options are all required:
 ```markdown
 <script type="text/javascript">
         HA.performRegister({
+            API_KEY: 'xxxxx-xxxxx-xxxxx-xxxxx',
             first_name: '',
             last_name: '',
             email: '',
@@ -84,6 +85,8 @@ These options are all required:
 ```
 
 These all fields are required:
+
+**API_KEY** – an application's unique key, please contact us at support@spinfluence.co<br>
     
 **first_name** – first name of the user. <br>
 
@@ -101,6 +104,7 @@ These all fields are required:
 ```markdown
     <script type="text/javascript">
         HA.performLogin({
+            API_KEY: 'xxxxx-xxxxx-xxxxx-xxxxx',
             email: '',
             password: '',
             complete: function (err, data) {
@@ -114,6 +118,7 @@ These all fields are required:
         });
     </script>
 ```
+**API_KEY** – an application's unique key, please contact us at support@spinfluence.co<br>
 
 **email** – email.<br>
 
@@ -135,6 +140,7 @@ These all fields are required:
 ```markdown
 <script type="text/javascript">
     HA.resendVerificationMail({
+        API_KEY: 'xxxxx-xxxxx-xxxxx-xxxxx',
         email: '',
         complete: function (err, data) {
             if (err) {
@@ -146,6 +152,7 @@ These all fields are required:
     });
 </script>
 ```
+**API_KEY** – an application's unique key, please contact us at support@spinfluence.co<br>
 
 **email** – email address of the user for which email verification is pending.<br>
 
