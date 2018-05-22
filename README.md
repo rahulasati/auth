@@ -42,7 +42,7 @@ Initialize the library prior to making any other calls with a call to HA.init(op
 ```
 These options are all required:
 
-**API_KEY** – an application's unique key, please contact us at rahul@spinfluence.co<br>
+**API_KEY** – an application's unique key, please contact us at support@spinfluence.co<br>
 
 **authPageUrl** – The Authentication page, in case of auth fail we will redirect user to this page.<br>
 
