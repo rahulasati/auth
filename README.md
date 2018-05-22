@@ -14,7 +14,7 @@ To add this library to your site, add:
 
 ### Usage
 
-We have developed this library to solve authentication problem for hubspot but if you're looking for simple client side authentication so definitely it will probably meet your needs.
+We have developed this library to solve authentication problem for hubspot but if you're looking for simple client side authentication apart from hubspot so definitely it will probably meet your needs.
 
 This javascript library is intentionally small and minimalistic.
 
