@@ -18,6 +18,20 @@ We have developed this library to solve authentication problem for hubspot but i
 
 This javascript library is intentionally small and minimalistic.
 
+### By using SpinAuthenticator you can achieve:
+
+1. Provide users with secure access to HubSpot pages.
+2. Easy customer registration service on HubSpot landing pages.
+3. Simple Login flow with email and password.
+4. Remembers the login until explicitly logged out by user. 
+
+
+### Limitation:
+
+1. Social Login is not supported for now.
+2. Not integrated with HubSpot CRM (User Management).
+
+
 ### Initialization
 
 Initialize the library prior to making any other calls with a call to HA.init(options)
