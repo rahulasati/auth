@@ -32,9 +32,9 @@ This javascript library is intentionally small and minimalistic.
 2. Not integrated with HubSpot CRM (User Management).
 
 
-### Initialization
+### Add Authetication to page
 
-Initialize the library prior to making any other calls with a call to HA.init(options)
+Add following piece of code on page we want to secure with a call to HA.init(options)
 
 ```markdown
 <script type="text/javascript">
