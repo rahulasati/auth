@@ -9,7 +9,7 @@ With SpinAuthenticator you can integrate client-side authentication on hubspot u
 To add this library to your site, add:
 
 ```markdown
-<script type='text/javascript' src='https://cdn.rawgit.com/rahulasati/hub-auth/master/javascript/1.0.0/main.js'></script>
+<script type='text/javascript' src='https://cdn.rawgit.com/rahulasati/hub-auth/master/js/1.0.0/spinauth.min.js'></script>
 ```
 
 ### Usage
@@ -41,7 +41,7 @@ Initialize the library prior to making any other calls with a call to HA.init(op
         window.onload = function () {
             HA.init({
                 API_KEY: 'xxxxx-xxxxx-xxxxx-xxxxx',
-                authPageUrl: '/url/--/auth.html',
+                AUTH_PAGE_URL: '/url/--/auth.html',
                 complete: function (err, data) {
                     console.log('init complete callback');
                     if (err) {
@@ -58,7 +58,7 @@ These options are all required:
 
 **API_KEY** – an application's unique key, please contact us at support@spinfluence.co<br>
 
-**authPageUrl** – The Authentication page, in case of auth fail we will redirect user to this page.<br>
+**AUTH_PAGE_URL** – The Authentication page, in case of auth fail we will redirect user to this page.<br>
 
 **complete** – a function(err, data) that will be called when initialization is complete.<br>
 
@@ -131,9 +131,14 @@ These all fields are required:
     
 ```markdown
 <script type="text/javascript">
-    HA.logout();
+    HA.logout({
+        API_KEY: 'xxxxx-xxxxx-xxxxx-xxxxx',
+        AUTH_PAGE_URL: '/url/--/auth.html',
+    });
 </script>
 ```
+**AUTH_PAGE_URL** – After logout, it will be redirected to specified page url.<br>
+
 
 ### Resend Email Verification (if required)
 
