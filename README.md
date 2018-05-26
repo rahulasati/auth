@@ -9,7 +9,7 @@ With SpinAuthenticator you can integrate client-side authentication on hubspot u
 To add this library to your site, add:
 
 ```markdown
-<script type='text/javascript' src='https://cdn.rawgit.com/rahulasati/hub-auth/master/js/1.0.0/spinauth.min.js'></script>
+<script type='text/javascript' src='https://cdn.rawgit.com/rahulasati/hub-auth/master/js/1.0.0/spin.min.js'></script>
 ```
 
 ### Usage
