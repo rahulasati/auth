@@ -42,8 +42,7 @@ Add following piece of code on page we want to secure with a call to HA.init(opt
             HA.init({
                 API_KEY: 'xxxxx-xxxxx-xxxxx-xxxxx',
                 AUTH_PAGE_URL: '/url/--/auth.html',
-                complete: function (err, data) {
-                    console.log('init complete callback');
+                complete: function (err, message) {
                     if (err) {
                         // if error then initialization fails check for error message
                     } else {
@@ -72,7 +71,7 @@ These options are all required:
             last_name: '',
             email: '',
             password: '',
-            complete: function (err, data) {
+            complete: function (err, message) {
                 if (err) {
                     // if error then registeration fails take action based on message.
                 } else {
@@ -107,7 +106,7 @@ These all fields are required:
             API_KEY: 'xxxxx-xxxxx-xxxxx-xxxxx',
             email: '',
             password: '',
-            complete: function (err, data) {
+            complete: function (err, user) {
                 if (err) {
                     // if error then attempt to login failed, display reason of failuare using err.
                     // here remain on login screen only.
@@ -147,7 +146,7 @@ These all fields are required:
     HA.resendVerificationMail({
         API_KEY: 'xxxxx-xxxxx-xxxxx-xxxxx',
         email: '',
-        complete: function (err, data) {
+        complete: function (err, message) {
             if (err) {
                 // error while sending verification email, check error.
             } else {
