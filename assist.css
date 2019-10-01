@@ -1,0 +1,346 @@
+body{
+    background-color: #e3f9ff;
+    font-family: "Poppins";
+}
+
+.popup_outer_wrap {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    background-color: rgba(0,0,0,.5);
+    z-index: 1;
+}
+
+.popup_wrap {
+    width: 750px;
+    height: auto;
+    padding-bottom: 30px;
+    margin: -250px auto 0px -350px;
+    background-color: #fff;
+    position: fixed;
+    border-radius: 25px;
+    top: 50%;
+    left: 50%;
+}
+
+.popup_header {
+    font-family: 'Poppins', sans-serif;
+    font-size: 23px;
+    color: #fff;
+    font-weight: 500;
+    background-color: #44b967;
+    border-radius: 25px 25px 0 0;
+    height: 58px;
+    line-height: 60px;
+    padding-left: 58px;
+    margin-bottom: 36px;
+}
+
+.popup_form{
+    padding-bottom: 78px;
+    border-right: 2px solid #cdcdcd;
+}
+.popup_form label{
+    vertical-align: top;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #353740;
+    font-weight: 400;
+    display: inline-block;
+    padding-bottom: 25px;
+    /* padding-bottom: 1px; */
+    padding-top: 4px;
+    padding-left: 20px;
+}
+
+.popup_inner_left {
+    padding-left: 58px;
+    width: 43%;
+    float: left;
+    display: inline-block;
+}
+
+.popup_inner_left .logo_txt {
+    width: 39%;
+    display: inline-block;
+    float: left;
+    padding-top: 5px;
+    vertical-align: middle;
+}
+
+.popup_inner_left .logo_icon {
+    width: 50%;
+    display: inline-block;
+}
+
+.popup_img_sec img{
+    padding-right: 50px;
+    width: 175px;
+    height: auto;
+}
+
+
+
+.popup_inner_right{
+    padding-left: 50px;
+    width: 40%;
+    float: left;
+    display: inline-block;
+    text-align: center;
+}
+
+.popup_inner_right .txt_header{
+    font-family: 'Poppins', sans-serif;
+    font-size: 19px;
+    font-weight: 700;
+    color: #282c32;
+    padding-top: 25px;
+    text-align: left;
+}
+
+.popup_inner_right .txt_content {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    color: #353740;
+    padding-top: 8px;
+    line-height: 24px;
+}
+
+.popup_inner_right .popup_btn a{
+    width: 190px;
+    height: 45px;
+    background-color: #44b967;
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    line-height: 45px;
+    border-radius: 8px;
+    margin-top: 25px;
+}
+
+.popup_logo {
+    padding-top: 60px;
+}
+
+
+.logo_txt{
+    font-size: 20px;
+    color: #353740;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    font-weight: 500;
+}
+
+
+.logo_icon img{
+    width: 80%;
+}
+
+.txt_wrap .popup_btn{
+    margin-top: 10px;
+}
+/** for designing checkbox */
+
+input[type=checkbox] + label {
+    display: block;
+    margin: 0.2em;
+    cursor: pointer;
+    padding: 0.2em;
+    padding: 11px 0;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+input[type=checkbox] + label:before {
+    content: "\2714";
+    border: 0.1em solid #000;
+    border-radius: 0.2em;
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    padding-left: 0.2em;
+    padding-bottom: 0.3em;
+    margin-right: 0.2em;
+    vertical-align: bottom;
+    color: transparent;
+    transition: .2s;
+}
+
+input[type=checkbox] + label:active:before {
+    transform: scale(0);
+}
+
+input[type=checkbox]:checked + label:before {
+    background-color: MediumSeaGreen;
+    border-color: MediumSeaGreen;
+    color: #fff;
+}
+
+input[type=checkbox]:disabled + label:before {
+    transform: scale(1);
+    border-color: #aaa;
+}
+
+input[type=checkbox]:checked:disabled + label:before {
+    transform: scale(1);
+    background-color: #bfb;
+    border-color: #bfb;
+}
+.popup_close {
+    float: right;
+    padding-top: 10px;
+    padding-right: 24px;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+.popup_close:hover{
+    opacity: 0.8;
+}
+
+
+/*** notification popups ***/
+
+.msg_inner_wrap_all {
+    bottom: 88px;
+    right: 90px;
+    border: 1px solid #e3f9ff;
+    width: 360px;
+    height: auto;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.msc_processing {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    z-index: 10;
+}
+
+.msg_failed{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    z-index: 8;
+}
+
+.msg_success{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    z-index: 6;
+}
+
+
+
+.msg_inner_wrap {
+    width: 385px;
+    height: auto;
+    background-color: #fff;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 95px;
+    animation-duration: 800ms;
+}
+.msg_inner_wrap h3{
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #353740;
+    padding-top: 5px;
+    line-height: 7px;
+    margin-bottom: 2px;
+}
+.msg_ico {
+    width: 50px;
+    display: inline;
+    float: left;
+    vertical-align: middle;
+    padding-left: 17px;
+    padding-top: 25px;
+}
+.msg_ico img{
+    width: 47px;
+    height: auto;
+}
+.main_txt_wrap{
+    width: 273px;
+    text-align: left;
+    vertical-align: middle;
+    display: inline-block;
+}
+.main_txt_wrap p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 11.5px;
+    font-weight: 500;
+    color: #a8a8a8;
+    margin-bottom: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    min-height: 28px;
+}
+
+.time_logo {
+    text-align: right;
+    padding-right: 33px;
+    padding-bottom: 3px;
+}
+
+.time_logo span{
+    font-family: 'Roboto', sans-serif;
+    font-size: 11.5px;
+    font-weight: 500;
+    color: #a8a8a8;
+    vertical-align: top;
+    padding-top: 4px;
+    display: inline-block;
+}
+
+.time_logo img{
+    width: 25px;
+    height: 20px;
+}
+
+.chat_ico {
+    width: 61px;
+    position: absolute;
+    bottom: 13px;
+    right: 12px;
+}
+.chat_close {
+    width: 50px;
+    position: absolute;
+    bottom: 13px;
+    right: 12px;
+}
+img.chat_ico:hover {
+    opacity: 0.8;
+}
+img.chat_close:hover{
+    opacity: 0.8;
+}
+
+
+@media screen and (max-width: 425px) {
+    .msg_inner_wrap {
+        width: 315px;
+    }
+
+    .main_txt_wrap {
+        width: 213px;
+    }
+
+    .msg_ico {
+        width: 44px;
+    }
+}
